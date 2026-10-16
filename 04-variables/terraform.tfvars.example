@@ -1,0 +1,14 @@
+# Copy file ini ke terraform.tfvars lalu sesuaikan
+container_name = "myapp"
+external_port  = 8090
+environment    = "dev"   # dev | staging | prod
+
+tags = {
+  owner   = "your-name"
+  project = "terraform-lab"
+}
+
+enable_redis = false
+
+# Jangan commit file terraform.tfvars yang berisi password asli!
+# redis_password = "supersecret"
